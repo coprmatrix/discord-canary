@@ -1,0 +1,12 @@
+<services>
+  <service name="download_files"/>
+  <service name="extract_file" mode="buildtime">
+    <param name="archive">discord-canary.tar.gz</param>
+    <param name="files">DiscordCanary/resources/build_info.json</param>
+    <param name="outfilename">info.json</param>
+  </service>
+  <service name="run" mode="buildtime">
+    <param name="command">
+      sed -i "s~Version:.*~Version: $(cat "$PWD/info.json" | jq .version -r)~" "$PWD/discord.spec"</param>
+  </service>
+</services>

@@ -1,0 +1,18 @@
+<package name="discord-canary" project="home:huakim:matrix">
+  <title>Discord Canary - Free voice and text chat for gamers</title>
+  <description>Discord Canary is an all-in-one voice and text chat for gamers that's free (beer), secure, and works on both your desktop and phone. The canary build is the Discord Inc. alpha test build.
+----
+
+if you have issues:
+
+"You may need to delete discord's config directory ~/.config/discordcanary
+If you are using betterdiscord you may also need to reinstall that
+Try this if discord is stuck on the updating screen or if nothing displays but a gray box
+If you believe there is a problem with this build please report it to me
+If you believe there is a problem with Discord please report it to:
+https://discord.gg/discord-testers or https://discord.gg/discord-linux."</description>
+  <build>
+    <enable repository="Fedora_38"/>
+  </build>
+</package>
+

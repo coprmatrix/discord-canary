@@ -1,0 +1,8 @@
+<directory name="discord-canary" rev="53" vrev="53" srcmd5="ff8d59885f9f1c9ccadaf57544e9b661">
+  <serviceinfo code="succeeded" xsrcmd5="4b3dd7df2f834d2b1106706d7de897fa" />
+  <entry name="LICENSE.txt" md5="26b3229c74488c64d94798e48bc49fcd" size="29811" mtime="1525277725" />
+  <entry name="PERMISSION" md5="ed8375508d5ff1fde4f36d84b832c3e1" size="4545" mtime="1525278557" />
+  <entry name="_service" md5="35989fc76dc6b7d0c9dd46da0d3b20b9" size="482" mtime="1717403085" />
+  <entry name="discord-canary.desktop" md5="424e672144976f6016460aa9b4ca7cf4" size="528" mtime="1667418668" />
+  <entry name="discord.spec" md5="4cab05c854d371283008c9425b53561a" size="3718" mtime="1692008209" />
+</directory>

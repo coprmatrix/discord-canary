@@ -1,0 +1,3 @@
+[submodule "obs-tools"]
+	path = obs-tools
+	url = https://github.com/huakim/obs-tools

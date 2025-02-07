@@ -1,0 +1,94 @@
+Return-Path: <sean@discordapp.com>
+Delivered-To: jon@moozaad.co.uk
+Received: from localhost (unknown [127.0.0.1])
+	by oberon.neopeon.com (Postfix) with ESMTP id A063581E3F4B
+	for <jon@moozaad.co.uk>; Mon,  4 Dec 2017 23:13:16 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at site
+X-Spam-Flag: NO
+X-Spam-Score: -1.877
+X-Spam-Level:
+X-Spam-Status: No, score=-1.877 tagged_above=-999.99 required=4.5
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	HEADER_FROM_DIFFERENT_DOMAINS=0.001, HTML_MESSAGE=0.001,
+	NO_DNS_FOR_FROM=0.001, T_SPF_HELO_TEMPERROR=0.01,
+	T_SPF_TEMPERROR=0.01] autolearn=no autolearn_force=no
+Authentication-Results: linux-jfp8.site (amavisd-new);
+	dkim=pass (2048-bit key) header.d=discord-com.20150623.gappssmtp.com
+Received: from oberon.neopeon.com ([127.0.0.1])
+	by localhost (linux-jfp8.site [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id mRDh7enGjHIq for <jon@moozaad.co.uk>;
+	Mon,  4 Dec 2017 23:13:15 +0000 (GMT)
+Received: from mail-qt0-f182.google.com (mail-qt0-f182.google.com [209.85.216.182])
+	by oberon.neopeon.com (Postfix) with ESMTPS id 4849781E3F38
+	for <jon@moozaad.co.uk>; Mon,  4 Dec 2017 23:13:15 +0000 (GMT)
+Received: by mail-qt0-f182.google.com with SMTP id d4so25052409qtj.5
+        for <jon@moozaad.co.uk>; Mon, 04 Dec 2017 15:13:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=discord-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=0IwQx6CythQzL6aqeWxTlXo927JqTilxpAbsNwaWK0Y=;
+        b=GCKV5QE0hxVZjER/YbfiEXJGHLuE09IpyIVNiqoyLy+nN2Tv6qM7zQDq7oUAvsEQWH
+         gD1NOu2tXoWZPCkmEjcK0rykY+jiGwZiPTav3VUtie3vT4ArZ6D1o9A8baN2zGwD0Cio
+         q5WOfnHygvieQgtnM95fxR15opq//IyyTHUn3YO3dE8ib/4XzKWIbl1BPtEbRaZuRzIm
+         Q8h8mZmEiDL3UC+w6hfzMiGecgYwLKsBA5I5EZbP7t2PH/h5KdsED0y/X8ac5RGuFEcl
+         o2ays0ighZpLqvaCsZZpgavPCbCELQcwmLXKYfwsd42gL+vx5ue2ZR5ppGAsQ2o+jmmf
+         ksPg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=0IwQx6CythQzL6aqeWxTlXo927JqTilxpAbsNwaWK0Y=;
+        b=dvDDm9plb/75h5WoDDhB0nW2GfkbCWKssLNuuoVWl4swTPsX9Apw32yQo2NKlXCxTJ
+         /D6FVOHTg1U00P2QcAnDiLNzlAD8Xyo7Ehf7QFgMYc0qqNxPUYo84xEoQ7cDlBje9c+a
+         eIeSHXQSkH5/Dv3Jd//0/Ew1h6NVyTahuNjOZMmZtXnspkySnr7Qq1bx2zyZ+hOYXAjS
+         QZYbS00Iw03lWpk43YteH84+I3dXcpkRDPPKfXfJ16U+otqstmruoBIlNya/bmFsl+3o
+         bAv4o/XbvYm1RySWz4uHclSq4CTJCCmiC6tyd6LkN5DgaTFLJKks7S7Py5c8NtqWYNoC
+         6C7w==
+X-Gm-Message-State: AKGB3mLPb4q4WdwdCJfP3GXytj4DMokHjvcY1acW/cnSKsLQl7kC2AD0
+	GwTdBGiV7Fe3Afy3NDyb17KCfx0p9jKBRzepy2Q57u4egZ8=
+X-Google-Smtp-Source: AGs4zMbeLUbTgP2IOSE6E7e1bOtBNoOrOa9sOqXLgVzGxYLJTxG/Rtk0z/M1idP8saaV2DIehbyrNPRlxJs+zGg/dvg=
+X-Received: by 10.55.43.134 with SMTP id r6mr19341459qkr.266.1512429193616;
+ Mon, 04 Dec 2017 15:13:13 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.12.179.156 with HTTP; Mon, 4 Dec 2017 15:12:53 -0800 (PST)
+In-Reply-To: <7953e4cd-a243-f29c-99da-d8236a6764ff@moozaad.co.uk>
+References: <afe12c85-af64-01e9-6b33-b932a7639ca1@moozaad.co.uk> <7953e4cd-a243-f29c-99da-d8236a6764ff@moozaad.co.uk>
+From: Sean Li <sean@discord.com>
+Date: Mon, 4 Dec 2017 15:12:53 -0800
+Message-ID: <CAADuVdujJ-+HUKw_y0gKwFkUXudk81_WtWLUcqXQ9mjz6pz9rw@mail.gmail.com>
+Subject: Re: openSUSE distribution
+To: Jon <jon@moozaad.co.uk>
+Content-Type: multipart/alternative; boundary="001a1147b4cad57b91055f8bdcaf"
+
+--001a1147b4cad57b91055f8bdcaf
+Content-Type: text/plain; charset="UTF-8"
+
+Hey Jon,
+
+I'm so sorry for the delay; we're all sorts of slammed going into the
+holidays.
+
+I can confirm that you have the permission to modify and distribute Discord
+with openSUSE; if you have any questions, please let me know.
+
+Sincerely,
+Sean Li
+Director, Trust and Safety
+Discord, Inc.
+
+
+On Mon, Nov 20, 2017 at 4:08 AM, Jon <jon@moozaad.co.uk> wrote:
+
+> Hi Sean
+>
+> I haven't seen a reply from you yet and I was wondering if I could get an
+> update?
+>
+> We have worked out how to make a (potentially) patent free version of
+> Discord which we passed by Chris who had no problems with it, we just need
+> to get permission to modify (remove patented work) and distribute Discord.
+> The modification doesn't affect any primary features of Discord, it just
+> means embedded previews of h.264 content fails elegantly.
+>
+> Regards,
+> Jon
